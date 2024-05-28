@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Customization Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jewellery Customization</h1>
+        <form id="customizationForm">
+            <div class="form-group">
+                <label for="occasion">Occasion:</label>
+                <select id="occasion" name="occasion" required>
+                    <option value="">Select an occasion</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="daily-wear">Daily Wear</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gift or Personal Purchase:</label>
+                <div class="radio-group">
+                    <div class="flex">
+                        <input type="radio" id="gift" name="purchase" value="gift" required>
+                        <label for="gift">Gift</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" id="personal" name="purchase" value="personal">
+                        <label for="personal">Personal</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="icon-group">
+                    <div class="flex">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Age Group:</label>
+                <div class="radio-group">
+                    <div class="flex">
+                        <input type="radio" id="age1" name="age" value="18-25" required>
+                        <label for="age1">18-25</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" id="age2" name="age" value="26-35">
+                        <label for="age2">26-35</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" id="age3" name="age" value="36-45">
+                        <label for="age3">36-45</label>
+                    </div>
+                    <div class="flex">
+                        <input type="radio" id="age4" name="age" value="46+">
+                        <label for="age4">46+</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="religion">Religion (Optional):</label>
+                <input type="text" id="religion" name="religion">
+            </div>
+
+            <div class="form-group">
+                <label>Type of Jewellery:</label>
+                <div class="icon-group">
+                    <div class="flex">
+                        <input type="checkbox" id="rings" name="jewellery" value="rings">
+                        <label for="rings">Rings</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="necklaces" name="jewellery" value="necklaces">
+                        <label for="necklaces">Necklaces</label>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" id="pendants" name="jewellery" value="pendants">
+                        <label for="pendants">Pendants</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Budget:</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Select a budget range</option>
+                    <option value="0-500">₹0 - ₹500</option>
+                    <option value="501-1000">₹501 - ₹1000</option>
+                    <option value="1001-2000">₹1001 - ₹2000</option>
+                    <option value="2001+">₹2001+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="outfit-image">Would you like to match your jewellery with an outfit?</label>
+                <input type="file" id="outfit-image" name="outfit-image" accept="image/*">
+                <img id="preview-image" src="#" alt="Preview Image">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
