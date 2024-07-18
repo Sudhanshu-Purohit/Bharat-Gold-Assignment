@@ -1,0 +1,1 @@
+console.log("this is index.js file just for testing purpose")
